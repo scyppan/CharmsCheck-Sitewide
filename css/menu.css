@@ -1,15 +1,54 @@
-body{
- background-color:  #d4c6a1;
-}
-
-nav,
-.wp-block-site-title,
-.hidden{
-	display:none !important;
-}
 
 .wp-block-post-title {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.custom-menu {
+  width: 100%;
+  margin: 13px 3px;          /* tighten vertical spacing */
+  text-align: center;
+}
+
+.custom-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 3px 0;         /* 3px top/bottom */
+  display: flex;
+  justify-content: center;
+  gap: 13px;               /* 3px between items */
+  align-items: center;
+}
+
+.custom-menu li {
+  position: relative;
+  padding: 1px 3px;       /* 1px top/bottom, 3px left/right */
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.custom-menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 3px 0;      /* keep your tight padding */
+  list-style: none;
+  white-space: nowrap;
+  z-index: 1000;
+  text-align: left;    /* <- new */
+}
+
+.custom-menu ul li:hover > ul {
+  display: block;
+  background-color: #e0dac2;
+  padding: 7px;
+  border-radius: 13px;
+  margin-left: 13px;
+}
+
+.custom-menu ul ul li {
+  padding: 1px 3px;       /* same tight padding for submenu items */
 }
