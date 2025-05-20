@@ -6,7 +6,7 @@ a{
     text-decoration: none;
 }
 
-nav, header
+nav, header,
 .wp-block-site-title,
 .hidden{
 	display:none !important;
