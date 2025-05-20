@@ -1,0 +1,15 @@
+body{
+ background-color:  #d4c6a1;
+}
+
+nav,
+.wp-block-site-title,
+.hidden{
+	display:none !important;
+}
+
+.wp-block-post-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
