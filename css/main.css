@@ -2,6 +2,10 @@ body{
  background-color:  #d4c6a1;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav, header
 .wp-block-site-title,
 .hidden{
